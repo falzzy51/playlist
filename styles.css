@@ -72,7 +72,16 @@ body {
     z-index: 999;
 }
 
-video {
-    display: block;
-    height: 100%;
+.videoBG {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-aspect-ratio: 16/9) {
+.videoBG {
+    width:100%;
+    height: auto;
+}
 }
